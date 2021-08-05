@@ -1,6 +1,6 @@
 <html>
 <head>
-<title>Bond Web Service Demo</title>
+<title>Bond Web Service Demo!</title>
 <style>
 body {font-family:georgia;}
 </style>
@@ -25,7 +25,7 @@ function loadAJAX(cat)
 	$.ajax({
 		type: "GET",
 		dataType: "json",
-		url: "api.php?cat=" + cat;
+		url: "api.php?cat=" + cat,
 		success:bondJSON
 
 	});
