@@ -41,7 +41,15 @@ function bondJSON(data){
 //Here is how i see data returned by the console
   console.log(data)
 
-  $("#output").text(JSON.stringify(data));
+  //This loads the data on the page but it is all bunched up
+  //$("#output").text(JSON.stringify(data));
+
+
+  let myData = JSON.stringify(data,null,4);
+
+  myData = "<pre>" + myData + "<pre>";
+
+  $("#output").html(myData);
 
 }
 
